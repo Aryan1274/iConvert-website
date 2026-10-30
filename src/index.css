@@ -27,6 +27,9 @@
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
+  /* Prevent horizontal overflow at the document level */
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
@@ -35,6 +38,7 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
   position: relative;
   selection-background-color: var(--accent-indigo);
   selection-color: #ffffff;
@@ -1120,6 +1124,8 @@ body {
   /* Navbar */
   .nav-gh-btn { display: none; }
   .nav-links { display: none; }
+  /* Hide coffee button from navbar — it's already in the mobile menu */
+  .btn-coffee { display: none; }
   .mobile-menu-btn { display: block; }
 
   .mobile-dropdown {
@@ -1277,10 +1283,6 @@ body {
     width: 100%;
   }
 
-  /* Coffee button — icon only to save space */
-  .btn-coffee span { display: none; }
-  .btn-coffee { padding: 0 0.65rem; }
-
   /* Logo text — slightly smaller */
   .logo-group { font-size: 0.95rem; gap: 0.45rem; }
 
@@ -1292,6 +1294,34 @@ body {
   .comp-table td {
     padding: 0.65rem 0.6rem;
     font-size: 0.75rem;
+  }
+}
+
+/* ---- Mobile overflow guard ---- */
+/* Clamp the ambient glow so it never creates horizontal scroll */
+@media (max-width: 860px) {
+  .ambient-glow-top {
+    width: 100vw;
+    max-width: 100%;
+  }
+  .ambient-grid {
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+  /* Prevent any section from overflowing its container */
+  .hero-section,
+  .comparison-banner-section,
+  .features-section,
+  .table-section,
+  .how-it-works-section,
+  .download-section,
+  .faq-section,
+  .footer {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 }
 
