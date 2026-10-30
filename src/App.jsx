@@ -20,8 +20,10 @@ import {
   EyeOff,
   Sliders,
   CheckCircle2,
-  FolderDown
+  FolderDown,
+  Coffee
 } from 'lucide-react';
+import AdBanner from './components/AdBanner.jsx';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('image'); // 'image' or 'video'
@@ -54,6 +56,17 @@ export default function App() {
             </ul>
 
             <div className="nav-actions">
+              <a
+                href="https://buymeacoffee.com/arvr"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-coffee"
+                style={{ padding: '0.5rem 0.9rem', fontSize: '0.85rem' }}
+                title="Support developer on Buy Me a Coffee"
+              >
+                <Coffee size={16} />
+                <span>Buy Me a Coffee</span>
+              </a>
               <a
                 href="https://github.com/Aryan1274/iConvert"
                 target="_blank"
@@ -205,6 +218,9 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* Ad Banner 1: High Visibility Hero Placement */}
+          <AdBanner />
         </div>
       </section>
 
@@ -499,6 +515,29 @@ export default function App() {
         </div>
       </section>
 
+      {/* Sponsored Partner Callout Card */}
+      <section className="container">
+        <div className="sponsor-callout-card">
+          <div className="sponsor-callout-content">
+            <h4>
+              <span>⚡ Special Partner Spotlight</span>
+              <span className="sponsor-pill">Featured</span>
+            </h4>
+            <p>Explore recommended cloud utilities, productivity tools, and exclusive member software offers.</p>
+          </div>
+          <a
+            href="https://ardance.org/4/31ef3d561bd3140e2237fcc997e8969c"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+            style={{ whiteSpace: 'nowrap', gap: '0.6rem' }}
+          >
+            <span>Explore Partner Deals</span>
+            <ExternalLink size={16} />
+          </a>
+        </div>
+      </section>
+
       {/* Download Center */}
       <section className="download-section" id="download">
         <div className="container">
@@ -573,7 +612,23 @@ export default function App() {
               <ShieldCheck size={16} color="#10b981" />
               <span>Free of telemetry, ads, and bloatware. Clean on VirusTotal.</span>
             </div>
+
+            <div style={{ marginTop: '2rem' }}>
+              <a
+                href="https://buymeacoffee.com/arvr"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-coffee"
+                style={{ padding: '0.75rem 1.6rem', fontSize: '0.95rem' }}
+              >
+                <Coffee size={18} />
+                <span>Like this free tool? Buy me a coffee ☕</span>
+              </a>
+            </div>
           </div>
+
+          {/* Ad Banner 2: High Conversion Placement */}
+          <AdBanner />
         </div>
       </section>
 
@@ -654,19 +709,21 @@ export default function App() {
             </div>
 
             <div className="footer-links-col">
-              <h4>Community</h4>
+              <h4>Community &amp; Support</h4>
               <ul>
+                <li><a href="https://buymeacoffee.com/arvr" target="_blank" rel="noreferrer" style={{ color: '#ffdd00', fontWeight: 600 }}>☕ Buy Me a Coffee</a></li>
                 <li><a href="https://github.com/Aryan1274/iConvert" target="_blank" rel="noreferrer">GitHub Repository</a></li>
                 <li><a href="https://github.com/Aryan1274/iConvert/issues" target="_blank" rel="noreferrer">Report an Issue</a></li>
-                <li><a href="https://github.com/Aryan1274/iConvert/releases" target="_blank" rel="noreferrer">Releases & Changelog</a></li>
+                <li><a href="https://github.com/Aryan1274/iConvert/releases" target="_blank" rel="noreferrer">Releases &amp; Changelog</a></li>
               </ul>
             </div>
 
             <div className="footer-links-col">
-              <h4>License & Privacy</h4>
+              <h4>License &amp; Partners</h4>
               <ul>
                 <li><a href="#faq">Privacy Guarantee</a></li>
                 <li><a href="https://opensource.org/licenses/MIT" target="_blank" rel="noreferrer">MIT Open Source License</a></li>
+                <li><a href="https://ardance.org/4/31ef3d561bd3140e2237fcc997e8969c" target="_blank" rel="noreferrer">Featured Partner Deals</a></li>
                 <li><a href="#faq">FFmpeg Compliance</a></li>
               </ul>
             </div>
