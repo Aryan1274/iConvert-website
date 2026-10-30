@@ -53,3 +53,4 @@ export default function SeoMeta({ title, description, canonicalUrl, schemaJson }
 
   return null;
 }
+
