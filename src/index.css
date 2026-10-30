@@ -644,12 +644,14 @@ body {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
+  table-layout: auto;
 }
 
 .comp-table th, .comp-table td {
   padding: 1.25rem 1.5rem;
   border-bottom: 1px solid var(--border-subtle);
   font-size: 0.925rem;
+  vertical-align: middle;
 }
 
 .comp-table th {
@@ -668,20 +670,20 @@ body {
   border-bottom: none;
 }
 
+.cell-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .cell-check {
   color: var(--accent-emerald);
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 
 .cell-cross {
   color: #ef4444;
   font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
 }
 
 /* How It Works Steps */

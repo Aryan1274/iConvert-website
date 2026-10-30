@@ -387,39 +387,75 @@ export default function App() {
               <tbody>
                 <tr>
                   <td><strong>File Privacy</strong></td>
-                  <td className="highlight cell-check"><Check size={18} /> 100% Local (Never leaves PC)</td>
-                  <td className="cell-cross"><X size={18} /> Uploaded to remote servers</td>
-                  <td className="cell-check"><Check size={18} /> Local</td>
+                  <td className="highlight cell-check">
+                    <span className="cell-content"><Check size={18} /> 100% Local (Never leaves PC)</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Uploaded to remote servers</span>
+                  </td>
+                  <td className="cell-check">
+                    <span className="cell-content"><Check size={18} /> Local</span>
+                  </td>
                 </tr>
                 <tr>
                   <td><strong>Max File Size</strong></td>
-                  <td className="highlight cell-check"><Check size={18} /> Unlimited (GBs+)</td>
-                  <td className="cell-cross"><X size={18} /> 25MB - 100MB limit</td>
-                  <td className="cell-cross"><X size={18} /> Fails on large MOV/HEVC</td>
+                  <td className="highlight cell-check">
+                    <span className="cell-content"><Check size={18} /> Unlimited (GBs+)</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> 25MB - 100MB limit</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Fails on large MOV/HEVC</span>
+                  </td>
                 </tr>
                 <tr>
                   <td><strong>Internet Required?</strong></td>
-                  <td className="highlight cell-check"><Check size={18} /> No (Works completely offline)</td>
-                  <td className="cell-cross"><X size={18} /> Yes (High bandwidth required)</td>
-                  <td className="cell-check"><Check size={18} /> No</td>
+                  <td className="highlight cell-check">
+                    <span className="cell-content"><Check size={18} /> No (Works completely offline)</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Yes (High bandwidth required)</span>
+                  </td>
+                  <td className="cell-check">
+                    <span className="cell-content"><Check size={18} /> No</span>
+                  </td>
                 </tr>
                 <tr>
                   <td><strong>Display P3 Color Preserved?</strong></td>
-                  <td className="highlight cell-check"><Check size={18} /> Yes (Tone-mapped sRGB)</td>
-                  <td className="cell-cross"><X size={18} /> Stripped / washed out</td>
-                  <td className="cell-cross"><X size={18} /> Poor color management</td>
+                  <td className="highlight cell-check">
+                    <span className="cell-content"><Check size={18} /> Yes (Tone-mapped sRGB)</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Stripped / washed out</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Poor color management</span>
+                  </td>
                 </tr>
                 <tr>
                   <td><strong>Batch Folder Download</strong></td>
-                  <td className="highlight cell-check"><Check size={18} /> Yes (1-Click ZIP)</td>
-                  <td className="cell-cross"><X size={18} /> Slow one-by-one or paywall</td>
-                  <td className="cell-cross"><X size={18} /> Manual one-by-one</td>
+                  <td className="highlight cell-check">
+                    <span className="cell-content"><Check size={18} /> Yes (1-Click ZIP)</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Slow one-by-one or paywall</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Manual one-by-one</span>
+                  </td>
                 </tr>
                 <tr>
                   <td><strong>Price</strong></td>
-                  <td className="highlight cell-check" style={{ color: '#38bdf8' }}><Check size={18} /> 100% Free & Open Source</td>
-                  <td className="cell-cross"><X size={18} /> Paid credits / Monthly fee</td>
-                  <td>Included with Windows</td>
+                  <td className="highlight cell-check" style={{ color: '#38bdf8' }}>
+                    <span className="cell-content"><Check size={18} /> 100% Free &amp; Open Source</span>
+                  </td>
+                  <td className="cell-cross">
+                    <span className="cell-content"><X size={18} /> Paid credits / Monthly fee</span>
+                  </td>
+                  <td>
+                    <span className="cell-content">Included with Windows</span>
+                  </td>
                 </tr>
               </tbody>
             </table>
