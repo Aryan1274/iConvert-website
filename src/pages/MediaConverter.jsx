@@ -10,7 +10,7 @@ export default function MediaConverter() {
     "@type": "WebPage",
     "name": "Free Local Media Converter for Windows — Offline Video, Image & Audio Processing",
     "description": "Free, private universal media converter for Windows 10 & 11. Convert heavy videos and images locally on your CPU/GPU without cloud uploads or subscriptions.",
-    "url": "https://iconvert.app/media-converter"
+    "url": "https://i-convert-website.vercel.app/media-converter"
   };
 
   return (
@@ -18,7 +18,7 @@ export default function MediaConverter() {
       <SeoMeta
         title="Free Local Media Converter for Windows 10 &amp; 11 — 100% Offline | iConvert"
         description="The fastest, most secure local media converter for Windows. Convert video, photo, and audio files on your PC with zero cloud uploads, no file limits, and full privacy."
-        canonicalUrl="https://iconvert.app/media-converter"
+        canonicalUrl="https://i-convert-website.vercel.app/media-converter"
         schemaJson={schemaJson}
       />
 

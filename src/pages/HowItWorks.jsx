@@ -39,7 +39,7 @@ export default function HowItWorks() {
       <SeoMeta
         title="How It Works — Step-by-Step Guide to Converting iPhone Media on PC"
         description="Learn how to convert iPhone HEIC photos to JPG and MOV videos to MP4 on Windows 10 & 11 in seconds with zero quality loss and 100% privacy."
-        canonicalUrl="https://iconvert.app/how-it-works"
+        canonicalUrl="https://i-convert-website.vercel.app/how-it-works"
         schemaJson={schemaJson}
       />
 

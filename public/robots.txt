@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iconvert.app/sitemap.xml
-
+Sitemap: https://i-convert-website.vercel.app/sitemap.xml

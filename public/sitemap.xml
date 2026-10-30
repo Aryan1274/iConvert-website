@@ -1,46 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://iconvert.app/</loc>
+    <loc>https://i-convert-website.vercel.app/</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://iconvert.app/heic-to-jpg</loc>
+    <loc>https://i-convert-website.vercel.app/heic-to-jpg</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://iconvert.app/mov-to-mp4</loc>
+    <loc>https://i-convert-website.vercel.app/mov-to-mp4</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://iconvert.app/media-converter</loc>
+    <loc>https://i-convert-website.vercel.app/media-converter</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://iconvert.app/features</loc>
+    <loc>https://i-convert-website.vercel.app/features</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://iconvert.app/how-it-works</loc>
+    <loc>https://i-convert-website.vercel.app/how-it-works</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://iconvert.app/about</loc>
+    <loc>https://i-convert-website.vercel.app/about</loc>
     <lastmod>2026-10-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
-

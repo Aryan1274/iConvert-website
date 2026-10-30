@@ -10,7 +10,7 @@ export default function HeicToJpg() {
     "@type": "WebPage",
     "name": "Convert HEIC to JPG on Windows 10 & 11 — Free, Offline, Zero Quality Loss",
     "description": "The best free HEIC to JPG converter for Windows. Batch convert Apple iPhone HEIC and HEIF photos to high quality JPEG locally with no upload and full P3 color preservation.",
-    "url": "https://iconvert.app/heic-to-jpg"
+    "url": "https://i-convert-website.vercel.app/heic-to-jpg"
   };
 
   return (
@@ -18,7 +18,7 @@ export default function HeicToJpg() {
       <SeoMeta
         title="Convert HEIC to JPG on Windows (10/11) — Free Offline Converter | iConvert"
         description="Convert Apple HEIC photos to JPG locally on Windows. 100% free, offline, no 50MB file limits, and Display P3 color gamut preserved. Batch export in 1 click."
-        canonicalUrl="https://iconvert.app/heic-to-jpg"
+        canonicalUrl="https://i-convert-website.vercel.app/heic-to-jpg"
         schemaJson={schemaJson}
       />
 

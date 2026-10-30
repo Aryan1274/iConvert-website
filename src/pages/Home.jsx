@@ -58,7 +58,7 @@ export default function Home() {
       <SeoMeta
         title="iConvert — Fast, Private Local iPhone Media Converter for Windows"
         description="Convert Apple HEIC photos to JPEG and MOV/HEVC videos to MP4 offline on your PC. No file size limits, zero cloud uploads, zero quality loss. Free Windows download."
-        canonicalUrl="https://iconvert.app/"
+        canonicalUrl="https://i-convert-website.vercel.app/"
         schemaJson={schemaJson}
       />
 

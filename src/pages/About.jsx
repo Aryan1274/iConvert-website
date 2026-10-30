@@ -13,7 +13,7 @@ export default function About() {
     "publisher": {
       "@type": "Organization",
       "name": "iConvert",
-      "url": "https://iconvert.app"
+      "url": "https://i-convert-website.vercel.app"
     }
   };
 
@@ -22,7 +22,7 @@ export default function About() {
       <SeoMeta
         title="About iConvert — Why We Built a Free, 100% Offline Media Converter"
         description="Learn why iConvert was built: to solve stubborn iPhone HEIC & MOV compatibility on Windows without cloud uploads, subscriptions, or quality degradation."
-        canonicalUrl="https://iconvert.app/about"
+        canonicalUrl="https://i-convert-website.vercel.app/about"
         schemaJson={schemaJson}
       />
 

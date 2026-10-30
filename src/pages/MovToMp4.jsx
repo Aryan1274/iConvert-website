@@ -10,7 +10,7 @@ export default function MovToMp4() {
     "@type": "WebPage",
     "name": "Convert iPhone MOV & HEVC to MP4 on Windows — Fix Washed-Out HDR Colors",
     "description": "Convert iPhone 4K QuickTime MOV and HEVC videos to universal MP4 on Windows. Fixes washed-out HDR colors with automatic HLG/Dolby Vision to Rec.709 tone mapping.",
-    "url": "https://iconvert.app/mov-to-mp4"
+    "url": "https://i-convert-website.vercel.app/mov-to-mp4"
   };
 
   return (
@@ -18,7 +18,7 @@ export default function MovToMp4() {
       <SeoMeta
         title="Convert iPhone MOV to MP4 on Windows — Fix Washed-Out HDR Video | iConvert"
         description="Convert Apple QuickTime MOV (HEVC/ProRes) to MP4 on Windows 10/11. Fixes washed-out HDR colors, preserves 4K 60fps, 100% free and offline with GPU acceleration."
-        canonicalUrl="https://iconvert.app/mov-to-mp4"
+        canonicalUrl="https://i-convert-website.vercel.app/mov-to-mp4"
         schemaJson={schemaJson}
       />
 

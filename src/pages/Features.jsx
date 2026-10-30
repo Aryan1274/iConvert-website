@@ -24,7 +24,7 @@ export default function Features() {
     "@type": "ItemPage",
     "name": "iConvert Features — Advanced Local Media Conversion Technology",
     "description": "Deep dive into iConvert technical features: Apple Display P3 color tone mapping, hardware-accelerated local FFmpeg transcoding, and multi-stream HEIC depth map filtering.",
-    "url": "https://iconvert.app/features"
+    "url": "https://i-convert-website.vercel.app/features"
   };
 
   return (
@@ -32,7 +32,7 @@ export default function Features() {
       <SeoMeta
         title="iConvert Features — Hardware Accelerated, P3 Tone-Mapping &amp; Batch Engine"
         description="Explore the technical capabilities of iConvert: Display P3 to sRGB color conversion, bundled FFmpeg, batch folder exports, and iPhone stream filtering."
-        canonicalUrl="https://iconvert.app/features"
+        canonicalUrl="https://i-convert-website.vercel.app/features"
         schemaJson={schemaJson}
       />
 
