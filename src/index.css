@@ -1124,8 +1124,17 @@ body {
   /* Navbar */
   .nav-gh-btn { display: none; }
   .nav-links { display: none; }
-  /* Hide coffee button from navbar — it's already in the mobile menu */
-  .btn-coffee { display: none; }
+  /* Coffee button — icon only on mobile, text hidden to save space */
+  .btn-coffee span { display: none; }
+  .btn-coffee {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
   .mobile-menu-btn { display: block; }
 
   .mobile-dropdown {
