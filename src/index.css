@@ -1103,7 +1103,11 @@ body {
   display: none;
 }
 
-/* Responsive */
+/* =========================================================
+   RESPONSIVE — Desktop-first, mobile additive only
+   Desktop layout is NEVER touched above these breakpoints.
+   ========================================================= */
+
 @media (max-width: 1024px) {
   .features-grid { grid-template-columns: repeat(2, 1fr); }
   .steps-grid { grid-template-columns: 1fr; }
@@ -1111,7 +1115,9 @@ body {
   .nav-link { font-size: 0.85rem; }
 }
 
+/* ---- Tablet / Large Mobile (≤ 860px) ---- */
 @media (max-width: 860px) {
+  /* Navbar */
   .nav-gh-btn { display: none; }
   .nav-links { display: none; }
   .mobile-menu-btn { display: block; }
@@ -1132,14 +1138,160 @@ body {
     padding: 0.5rem 0;
   }
 
-  .mobile-nav-link:hover {
-    color: #38bdf8;
+  .mobile-nav-link:hover { color: #38bdf8; }
+
+  /* Hero */
+  .hero-section {
+    padding-top: 110px;
+    padding-bottom: 60px;
   }
 
+  /* Grids → single column */
   .features-grid { grid-template-columns: 1fr; }
   .sim-conversion-row { grid-template-columns: 1fr; }
-  .sim-stats-grid { grid-template-columns: 1fr; }
+  .sim-stats-grid { grid-template-columns: repeat(3, 1fr); }
   .download-cards-grid { grid-template-columns: 1fr; }
   .sponsor-callout-card { flex-direction: column; text-align: center; }
+
+  /* Showcase tabs — scrollable row */
+  .sim-tabs {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .sim-tabs::-webkit-scrollbar { display: none; }
+
+  /* Hide arrow between cards when stacked */
+  .sim-arrow-box { display: none; }
+
+  /* Simulator body padding */
+  .simulator-body { padding: 1.25rem; }
+
+  /* Section padding tightening */
+  .comparison-banner-section { padding: 60px 0; }
+  .features-section { padding: 60px 0; }
+  .how-it-works-section { padding: 60px 0; }
+  .table-section { padding: 60px 0; }
+  .download-section { padding: 70px 0; }
+  .faq-section { padding: 60px 0; }
+
+  /* Download box */
+  .download-box { padding: 2.5rem 1.5rem; }
+
+  /* Table — smooth horizontal scroll on touch */
+  .table-wrapper {
+    -webkit-overflow-scrolling: touch;
+    border-radius: 14px;
+  }
+
+  /* Footer — stack brand + link columns */
+  .footer-top {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-brand { max-width: 100%; }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+}
+
+/* ---- Small Mobile (≤ 600px) ---- */
+@media (max-width: 600px) {
+  /* Container padding */
+  .container { padding: 0 1rem; }
+
+  /* Navbar height */
+  .navbar { height: 60px; gap: 0.5rem; }
+  .logo-group { font-size: 1.05rem; }
+  .logo-group img { width: 28px; height: 28px; }
+
+  /* Hero */
+  .hero-section { padding-top: 90px; padding-bottom: 48px; }
+  .hero-subtitle { font-size: 1rem; }
+  .release-badge { font-size: 0.78rem; }
+  .hero-meta-strip { gap: 1rem; }
+
+  /* Showcase window header */
+  .window-title { display: none; }
+  .showcase-wrapper { margin: 2.5rem auto 1.5rem auto; }
+
+  /* Simulator stats — 3 col → 1 col on very small */
+  .sim-stats-grid { grid-template-columns: 1fr; }
+  .sim-stat-card { padding: 0.75rem; }
+
+  /* Pain / solution cards */
+  .pain-card { padding: 1.5rem 1.25rem; }
+  .pain-grid { grid-template-columns: 1fr; }
+
+  /* Feature boxes */
+  .feature-box { padding: 1.5rem 1.25rem; }
+
+  /* Step cards */
+  .step-card { padding: 1.5rem 1.25rem; }
+
+  /* Table cells — smaller on small phones */
+  .comp-table th,
+  .comp-table td {
+    padding: 0.85rem 0.9rem;
+    font-size: 0.82rem;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 1rem 1.1rem;
+    font-size: 0.95rem;
+  }
+  .faq-answer {
+    padding: 0 1.1rem 1rem 1.1rem;
+    font-size: 0.88rem;
+  }
+
+  /* Download box */
+  .download-box { padding: 2rem 1rem; border-radius: 16px; }
+  .dl-card { padding: 1.25rem; }
+
+  /* Sponsor callout */
+  .sponsor-callout-card { padding: 1.25rem 1rem; }
+
+  /* Ad banner */
+  .ad-banner-wrapper { margin: 2rem auto; padding: 1rem; }
+
+  /* Footer */
+  .footer { padding: 48px 0 24px 0; }
+  .footer-links-col h4 { margin-bottom: 0.65rem; }
+}
+
+/* ---- Very Small Phones (≤ 400px) ---- */
+@media (max-width: 400px) {
+  /* Hero CTA buttons — stack vertically */
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .hero-cta-group .btn {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Coffee button — icon only to save space */
+  .btn-coffee span { display: none; }
+  .btn-coffee { padding: 0 0.65rem; }
+
+  /* Logo text — slightly smaller */
+  .logo-group { font-size: 0.95rem; gap: 0.45rem; }
+
+  /* Section headings */
+  .section-heading { font-size: 1.65rem; }
+
+  /* Table — even tighter */
+  .comp-table th,
+  .comp-table td {
+    padding: 0.65rem 0.6rem;
+    font-size: 0.75rem;
+  }
 }
 
